@@ -12,7 +12,7 @@ require 'rails_helper'
 
 RSpec.describe 'Astronauts Index Page' do
   before :each do
-    @na = Astronaut.create!(name: 'Neil Armstrong', age: 37, job: 'commander')
+    @na = Astronaut.create(name: 'Neil Armstrong', age: 37, job: 'commander')
   end
 
   it 'can have an index page with all details for each astronaut' do
